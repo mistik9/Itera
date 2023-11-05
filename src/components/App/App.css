@@ -1,0 +1,23 @@
+.app {
+    max-width: 880px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Inter", "Arial", "sans-serif";
+    margin: 0 auto;
+    background: -webkit-linear-gradient(
+      262deg,
+      #034064,
+      #24242c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      262deg,
+      #02283f,
+      #24242c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #ffffff;
+  }
+
+  @media screen and (max-width: 700px) {
+
+  }
