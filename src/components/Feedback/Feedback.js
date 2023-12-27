@@ -10,7 +10,7 @@ function Feedback() {
 
     return (
         <section className="section feedback" id="feedback">
-            <form className="feedback__form" action="mailto:info@newitera.ru" enctype="text/plain">
+            <form className="feedback__form" action="mailto:info@newitera.ru" encType="text/plain">
                 <h2 className="section__title">Оставить заявку</h2>
                 <label className="feedback__label">Имя</label>
                 <input className="feedback__input" type="name" placeholder="Олег" required/>

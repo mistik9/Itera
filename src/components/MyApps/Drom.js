@@ -1,17 +1,25 @@
 import React from "react";
 import Sector from "../Sector/Sector";
 
-function DromApp() {
+function DromApp({handleClick, isDesc}) {
+
+
 
     return (
         <div className="my-app">
             <div className="my-app__title-container">
-                <img className="my-app__icon" src="https://util.1c-bitrix.ru/upload/bx24vendor/041/x3xkkj346ylpawnf1yab9ikp99u6genv/250-250.png" alt="icon"></img>
+                <img className="my-app__img" src="https://util.1c-bitrix.ru/upload/bx24vendor/041/x3xkkj346ylpawnf1yab9ikp99u6genv/250-250.png" alt="icon"></img>
                 <h3 className="my-app__title">ДРОМ: чаты, сделки, товары</h3>
                 <p className="my-app__text">Интеграция диалогов, сделок, объявлений о продаже запчастей и автомобилей.</p>
                 <a href="https://www.bitrix24.ru/apps/app/integrationpart.drom_chaty_sdelki_tovary/" target="_blank" className="my-app__link">Ссылка на приложение </a>
             </div>
-            <h4 className="my-app__subtitle">Описание</h4>
+            <ul className="my-app__links-list">
+                <li className="my-app__link" onClick={handleClick}>
+                    <h3>Описание</h3> </li>
+                <li className="my-app__link" onClick={handleClick}>
+                    <h3 >Вопросы и ответы</h3>
+                </li>
+            </ul>
             <p className="my-app__text">Данное приложение подойдёт продавцам запчастей и продавцам автомобилей.</p>
             <p className="my-app__text">Интеграция диалогов, сделок, объявлений о продаже запчастей и автомобилей.</p>
             <ul className="my-app__list">
