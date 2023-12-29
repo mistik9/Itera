@@ -13,7 +13,7 @@ function AvitoApp({handleClick, isDesc}) {
     return (
         <div className="my-app">
             <div className="my-app__title-container">
-                <img className="my-app__img" src="//util.1c-bitrix.ru/upload/bx24vendor/79b/h6uy1w7mfdv1hfb9uduq2kf91vzm0z4p/лого2.png" alt="icon"></img>
+                <img className="my-app__img" src="//util.1c-bitrix.ru/upload/bx24vendor/79b/h6uy1w7mfdv1hfb9uduq2kf91vzm0z4p/лого2.png" alt="иконка"></img>
                 <h3 className="my-app__title">Avito: чаты и товары</h3>
                 <p className="my-app__text">Подключает диалоги Avito к открытым линиям, переносит данные из Avito в Битрикс24 исходя из настроек пользователя.</p>
                 <a href="https://www.bitrix24.ru/apps/app/integrationpart.avito_chaty_sdelki_tovary/" target="_blank" className="my-app__link">Ссылка на приложение </a>
