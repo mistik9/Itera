@@ -9,16 +9,11 @@ function Nav() {
             <ul className="nav__list" >
                 <li className="nav__list-item">
                     <NavLink to="/" className={({ isActive }) => `nav__link ${isActive ? "nav__link_active" : ""}`}> Описание </NavLink>
-                  
                 </li>
                 <li className="nav__list-item">
                     <NavLink to="/" className={({ isActive }) => `nav__link ${isActive ? "nav__link_active" : ""}`}>Вопросы и ответы</NavLink>
-              
                 </li>
-               
-       
             </ul>
-
         </div>
 
     )

@@ -8,13 +8,14 @@ module.exports = {
     main: './src/index.js'
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'main.js',
-    publicPath: '',
+    publicPath: '/',
   },
   mode: 'development',
   devServer: {
-    static: path.resolve(__dirname, './dist'),
+    static: path.resolve(__dirname, 'dist'),
+    historyApiFallback: true,
     allowedHosts: "all",
     open: true,
     compress: true,

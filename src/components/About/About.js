@@ -4,9 +4,9 @@ import "./About.css"
 
 function About() {
 
-    return (
-        <>
-        <section className="lead section" id="about">
+  return (
+    <>
+      <section className="lead section" id="about">
         <div className="d1">
           <div className="d2">
             <div className="d3">
@@ -49,7 +49,7 @@ function About() {
           </p>
         </article>
       </section>
-      </>
-    )
+    </>
+  )
 }
 export default About;

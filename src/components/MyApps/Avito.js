@@ -2,12 +2,9 @@ import React from "react";
 import Sector from "../Sector/Sector";
 import Faq from "../Faq/Faq";
 import Fix from "../Fix/Fix";
-import { NavLink } from "react-router-dom";
 import { faq_avito, desc_avito, updates_avito } from "../../utils/const";
 
-function AvitoApp({handleClick, isDesc}) {
-
-
+function AvitoApp({ handleClick, isDesc }) {
     let decsItem = desc_avito.list?.map((i) => <li key={i.text} className="my-app__list-item">{i.text}</li>)
 
     return (
@@ -19,10 +16,10 @@ function AvitoApp({handleClick, isDesc}) {
                 <a href="https://www.bitrix24.ru/apps/app/integrationpart.avito_chaty_sdelki_tovary/" target="_blank" className="my-app__link">Ссылка на приложение </a>
             </div>
             <ul className="my-app__links-list">
-                <li className="my-app__link" onClick={handleClick}>
-                    <h3>Описание</h3> </li>
-                <li className="my-app__link" onClick={handleClick}>
-                    <h3 >Вопросы и ответы</h3>
+                <li className={`my-app__link ${isDesc ? "my-app__link_active" : ""} `} onClick={handleClick}>
+                    Описание</li>
+                <li className={`my-app__link ${isDesc ? "" : "my-app__link_active"} `} onClick={handleClick}>
+                    Вопросы и ответы
                 </li>
             </ul>
             {isDesc ? (
@@ -46,11 +43,13 @@ function AvitoApp({handleClick, isDesc}) {
                 <div className="" >
                     {faq_avito.map(item =>
                         <Faq
-                            key={item.title}
+                            key={item.id}
                             title={item.title}
                             list={item.list}
                             text={item.text}
-                     
+                            id={item.id}
+
+
                         />)}
                 </div>
             )}

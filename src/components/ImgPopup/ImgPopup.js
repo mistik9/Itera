@@ -1,8 +1,7 @@
 import React from "react";
 import "./ImgPopup.css";
 
-function ImgPopup({selectedItem,  onclose, isPopupOpen }) {
- 
+function ImgPopup({ selectedItem, onclose, isPopupOpen }) {
 
   return (
     <section className={`popup ${isPopupOpen ? 'popup_opened' : ''}`} >

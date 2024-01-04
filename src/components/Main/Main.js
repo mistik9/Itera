@@ -1,12 +1,11 @@
 import React from "react";
 import Feedback from "../Feedback/Feedback";
-import MyApps from "../MyApps/myApps";
+import MyApps from "../MyApps/MyApps";
 import About from "../About/About";
- 
+
 
 
 function Main() {
-
 
   return (
     <main className="main">

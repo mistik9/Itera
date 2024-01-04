@@ -1,13 +1,17 @@
 import React from "react";
 import "./Faq.css";
 import ImgPopup from "../ImgPopup/ImgPopup";
+import { HashLink as Link } from 'react-router-hash-link';
+import { useLocation } from "react-router-dom";
 
 
 
-function Faq({ title, text, list }) {
+
+function Faq({ title, text, list, id }) {
     const [isPopupOpen, setIsPopupOpen] = React.useState(false);
     const [visible, setVisible] = React.useState(false);
     const [selectedItem, setSelectedItem] = React.useState(null);
+    const location = useLocation().pathname
 
 
     function closePopup() {
@@ -26,15 +30,16 @@ function Faq({ title, text, list }) {
 
     return (
         <div className="faq">
-
-            <div className="faq__block" onClick={onShow}>
-                <div className={`faq__icon ${visible ? "faq__icon_minus" : ""}`} > </div>
-                <h4 className="faq__subtitle">{title}</h4>
-            </div>
+            <Link className="faq__link" to={`#${id}`}>
+                <div className="faq__block" onClick={onShow}>
+                    <div className={`faq__icon ${visible ? "faq__icon_minus" : ""}`} id={id}> </div>
+                    <h4 className="faq__subtitle">{title}</h4>
+                </div>
+            </Link>
             {visible ?
                 (<ul className="faq__list" >
                     {list?.map((i) => (
-                        <li key={i.text} className="faq__list-item">
+                        <li key={i.text} className="faq__list-item" >
                             <p className="faq__text">{i.text}</p>
                             {i.link ? <img className="faq__img" src={i.link} alt="скриншот" onClick={onClickImg}></img> : null}
                         </li>

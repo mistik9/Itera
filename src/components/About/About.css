@@ -151,10 +151,21 @@
   line-height: 150%;
   font-size: 18px;
   margin: 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.section__text_sm {
+  font-size: 16px;
+  color: #9090a0;
+}
+.section__text_sm:hover {
+  color: #ffffff;
 }
 
 .section__link {
-  color: #9090a0;
+  color: #ffffff;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -255,7 +266,7 @@
     height: 210px;
   }
 
-  .d51{
+  .d51 {
     margin: 15px;
     width: 180px;
     height: 180px;
@@ -266,7 +277,7 @@
     width: 150px;
     height: 150px;
   }
-  
+
   .section {
     padding: 12px 25px;
     min-height: 380px;

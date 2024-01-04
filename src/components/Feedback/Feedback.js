@@ -3,11 +3,6 @@ import "./Feedback.css"
 
 function Feedback() {
 
-    // function handleSubmit (e) {
-    //     e.preventDefault()
-
-    // }
-
     return (
         <section className="section feedback" id="feedback">
             <form className="feedback__form" action="mailto:info@newitera.ru" encType="text/plain">

@@ -1,9 +1,7 @@
 import React from "react";
 import Sector from "../Sector/Sector";
 
-function DromApp({handleClick, isDesc}) {
-
-
+function DromApp({ handleClick, isDesc }) {
 
     return (
         <div className="my-app">
@@ -14,10 +12,10 @@ function DromApp({handleClick, isDesc}) {
                 <a href="https://www.bitrix24.ru/apps/app/integrationpart.drom_chaty_sdelki_tovary/" target="_blank" className="my-app__link">Ссылка на приложение </a>
             </div>
             <ul className="my-app__links-list">
-                <li className="my-app__link" onClick={handleClick}>
-                    <h3>Описание</h3> </li>
-                <li className="my-app__link" onClick={handleClick}>
-                    <h3 >Вопросы и ответы</h3>
+                <li className={`my-app__link ${isDesc ? "my-app__link_active" : ""} `} onClick={handleClick}>
+                    Описание</li>
+                <li className={`my-app__link ${isDesc ? "" : "my-app__link_active"} `} onClick={handleClick}>
+                    Вопросы и ответы
                 </li>
             </ul>
             <p className="my-app__text">Данное приложение подойдёт продавцам запчастей и продавцам автомобилей.</p>

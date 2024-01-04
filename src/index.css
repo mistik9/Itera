@@ -1,23 +1,18 @@
+@import url(./vendor/normalize.css);
+
 .root {
-    width: 100%;
-    margin: 0 auto;
-    background: -webkit-linear-gradient(
-        262deg,
-        #034064,
-        #24242c
-      ); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(
-        262deg,
-        #02283f,
-        #24242c
-      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        color: #ffffff;
-
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background: -webkit-linear-gradient(
+    262deg,
+    #034064,
+    #24242c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    262deg,
+    #02283f,
+    #24242c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
 }
-
-
-
-
-
-
-

@@ -2,9 +2,10 @@ import React from "react";
 import Nav from "../Nav/Nav";
 import logo from "../../image/logo.png";
 import { Link } from "react-router-dom";
-import "./Footer.css"
+import "./Footer.css";
 
 function Footer() {
+    const currentDate = new Date().getFullYear()
 
     return (
         <footer className="footer">
@@ -12,7 +13,7 @@ function Footer() {
                 <img className="footer__logo" src={logo} alt="Лого" />
             </Link>
             <Nav />
-            <p className="footer__copyright">&#169;2023</p>
+            <p className="footer__copyright">{`© ${currentDate}`}</p>
         </footer>
     )
 }

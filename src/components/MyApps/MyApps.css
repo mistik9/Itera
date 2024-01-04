@@ -17,7 +17,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #02283f;
+  box-shadow: 0 4px 12px 0 #24242c85;
+  transition: transform 4s ease-in-out 1s;
+  cursor: pointer;
+}
+
+.my-apps__item:hover {
   background: linear-gradient(201deg, #02283f, #24242c);
+
+  color: #9090a0;
 }
 
 .my-apps__img {
@@ -36,6 +45,7 @@
   grid-template-columns: auto 1fr;
   gap: 15px;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .my-app__img {
@@ -54,7 +64,7 @@
   margin: 0;
 }
 
-.my-app__text_invisible{
+.my-app__text_invisible {
   display: none;
 }
 
@@ -62,15 +72,21 @@
   display: flex;
   list-style: none;
   justify-content: space-around;
-  margin: 0;
+  margin: 20px 0;
   padding: 0;
 }
 
-
 .my-app__link {
+  font-size: 20px;
+  line-height: 120%;
   cursor: pointer;
   text-decoration: none;
   color: #9090a0;
+}
+
+.my-app__link_active {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .my-app__list {
@@ -90,17 +106,15 @@
   border-bottom: 1px solid #83a7c9;
   display: flex;
   flex-direction: column;
-
 }
 
 .my-app__faq-block {
-display: flex;
-cursor: pointer;
-
+  display: flex;
+  cursor: pointer;
 }
 
 .my-app__subtitle {
-  margin:0 0 20px;
+  margin: 0 0 20px;
   font-size: 18px;
 }
 
@@ -122,5 +136,15 @@ cursor: pointer;
   .my-apps__container {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
+  }
+  .my-app__links-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .my-app__title-container {
+    justify-items: center;
+    grid-template-columns: 1fr;
   }
 }
