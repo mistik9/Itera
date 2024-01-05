@@ -1,10 +1,8 @@
 import React from "react";
 import "./Faq.css";
 import ImgPopup from "../ImgPopup/ImgPopup";
-import { HashLink as Link } from 'react-router-hash-link';
-import { useLocation } from "react-router-dom";
-
-
+// import { HashLink as Link } from 'react-router-hash-link';
+import { Link, useLocation } from "react-router-dom";
 
 
 function Faq({ title, text, list, id }) {
@@ -30,6 +28,7 @@ function Faq({ title, text, list, id }) {
 
     return (
         <div className="faq">
+   
             <Link className="faq__link" to={`#${id}`}>
                 <div className="faq__block" onClick={onShow}>
                     <div className={`faq__icon ${visible ? "faq__icon_minus" : ""}`} id={id}> </div>

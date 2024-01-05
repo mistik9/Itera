@@ -65,3 +65,11 @@
   right: 0;
   bottom: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .sector {
+    right: 20px;
+    bottom: 20px;
+  }
+
+}
