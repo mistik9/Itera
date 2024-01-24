@@ -15,13 +15,13 @@ function AvitoApp({ handleClick, isDesc }) {
                 <p className="my-app__text">Подключает диалоги Avito к открытым линиям, переносит данные из Avito в Битрикс24 исходя из настроек пользователя.</p>
                 <a href="https://www.bitrix24.ru/apps/app/integrationpart.avito_chaty_sdelki_tovary/" target="_blank" className="my-app__link">Ссылка на приложение </a>
             </div>
-            <ul className="my-app__links-list">
-                <li className={`my-app__link ${isDesc ? "my-app__link_active" : ""} `} onClick={handleClick}>
-                    Описание</li>
-                <li className={`my-app__link ${isDesc ? "" : "my-app__link_active"} `} onClick={handleClick}>
+            <div className="my-app__menu">
+                <div className={`my-app__menu-item my-app__link  ${isDesc ? "my-app__link_active" : ""} `} onClick={handleClick}>
+                    Описание</div>
+                <div className={`my-app__menu-item my-app__link ${isDesc ? "" : "my-app__link_active"} `} onClick={handleClick}>
                     Вопросы и ответы
-                </li>
-            </ul>
+                </div>
+            </div>
             {isDesc ? (
                 <>
                     <p className="my-app__text">Интеграция диалогов и товаров на сайте Avito с порталом Битрикс24.</p>
@@ -48,6 +48,8 @@ function AvitoApp({ handleClick, isDesc }) {
                             list={item.list}
                             text={item.text}
                             id={item.id}
+                            support={item.support}
+                            support_wa ={item.support_wa}
 
 
                         />)}

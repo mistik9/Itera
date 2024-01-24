@@ -27,10 +27,10 @@ function Feedback() {
                 <a className="section__link" href="mailto:info@newitera.ru">info@newitera.ru</a>
                 <a className="section__link" href="tel:+79958454368">+7 995 845 43 68</a>
                 <div className="feedback__social-icons">
-                    <a className="feedback__icon feedback__icon_wa" href="https://wa.me/79958454368?text=" target="_blank"
+                    <a className="section__icon section__icon_wa" href="https://wa.me/79958454368?text=" target="_blank"
                         rel="noreferrer"></a>
 
-                    <a className="feedback__icon feedback__icon_tg" href="https://t.me/+79958454368" target="_blank"
+                    <a className="section__icon section__icon_tg" href="https://t.me/+79958454368" target="_blank"
                         rel="noreferrer"></a>
                 </div>
             </div>

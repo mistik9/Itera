@@ -68,12 +68,21 @@
   display: none;
 }
 
-.my-app__links-list {
+.my-app__menu {
+  gap: 5px;
   display: flex;
   list-style: none;
   justify-content: space-around;
-  margin: 20px 0;
-  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.my-app__menu-item {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 20px 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .my-app__link {
@@ -138,7 +147,7 @@
     align-items: center;
     gap: 15px;
   }
-  .my-app__links-list {
+  .my-app__menu {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;

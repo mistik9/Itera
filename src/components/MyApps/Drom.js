@@ -11,7 +11,7 @@ function DromApp({ handleClick, isDesc }) {
                 <p className="my-app__text">Интеграция диалогов, сделок, объявлений о продаже запчастей и автомобилей.</p>
                 <a href="https://www.bitrix24.ru/apps/app/integrationpart.drom_chaty_sdelki_tovary/" target="_blank" className="my-app__link">Ссылка на приложение </a>
             </div>
-            <ul className="my-app__links-list">
+            <ul className="my-app__menu">
                 <li className={`my-app__link ${isDesc ? "my-app__link_active" : ""} `} onClick={handleClick}>
                     Описание</li>
                 <li className={`my-app__link ${isDesc ? "" : "my-app__link_active"} `} onClick={handleClick}>

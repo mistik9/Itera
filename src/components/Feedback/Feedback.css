@@ -50,7 +50,7 @@
   margin-top: 8px;
 }
 
-.feedback__icon {
+.section__icon {
   display: block;
   background-color: #eeeef0;
   height: 35px;
@@ -59,15 +59,15 @@
   transition: transform 4s ease-in-out 1s;
 }
 
-.feedback__icon:hover {
+.section__icon:hover {
   background-color: #b9b9b9;
 }
 
-.feedback__icon_tg {
+.section__icon_tg {
   background-image: url(../../image/telegram.svg);
 }
 
-.feedback__icon_wa {
+.section__icon_wa {
   background-image: url(../../image/whatsapp2.svg);
 }
 

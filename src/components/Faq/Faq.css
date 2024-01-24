@@ -28,6 +28,11 @@
   color: #ffffff;
 }
 
+.faq__support {
+display: flex;
+gap: 20px;
+}
+
 .faq__icon {
   background-image: url(../../image/plus.png);
   background-position: center;
