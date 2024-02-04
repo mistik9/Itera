@@ -28,9 +28,10 @@
   color: #ffffff;
 }
 
+
 .faq__support {
 display: flex;
-gap: 20px;
+gap: 10px;
 }
 
 .faq__icon {
