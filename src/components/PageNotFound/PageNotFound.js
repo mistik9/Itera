@@ -11,7 +11,8 @@ function PageNotFound() {
       <h1 className="notfound__title">404</h1>
       <p className="notfound__subtitle">Страница не найдена</p>
       <button className="notfound__btn" onClick={() => navigate(-1)}>Назад</button>
-    </div>
+      <div className="notfound__img" ></div> 
+        </div>
   )
 }
 
