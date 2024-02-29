@@ -26,6 +26,13 @@ function MyApps() {
             <p className="section__text_sm"> Подробнее 	&#8594;</p>
           </div>
         </NavLink>
+        <NavLink to="/autoload" className="section__link" >
+          <div className="my-apps__item">
+            <img className="my-apps__img" src={app} alt="иконка" />
+            <p className="section__text">Aвтозагрузка товаров или услуг с портала Битрикс24 на Avito.</p>
+            <p className="section__text_sm"> Подробнее 	&#8594;</p>
+          </div>
+        </NavLink>
       </div>
     </section>
   )

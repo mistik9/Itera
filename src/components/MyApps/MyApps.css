@@ -4,8 +4,10 @@
 }
 
 .my-apps__container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto;
+  justify-content: center;
   width: 100%;
 }
 
