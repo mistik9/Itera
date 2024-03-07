@@ -148,6 +148,7 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    grid-template-columns: auto;
   }
   .my-app__menu {
     flex-direction: column;
