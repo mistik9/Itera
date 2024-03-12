@@ -38,9 +38,8 @@ gap: 10px;
   background-image: url(../../image/plus.png);
   background-position: center;
   background-size: cover;
-
   height: 24px;
-  width: 24px;
+  min-width: 24px;
   margin-right: 20px;
   transition: transform 4s ease-in-out 1s;
 }
