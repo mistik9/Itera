@@ -23,7 +23,7 @@ function About() {
       </section>
       <section className="section ">
         <Circle />
-        <article>
+        <article className="section__article">
           <p className="section__text">
             Компания ITera специализируется на разработке актуального
             программного обеспечения для бизнеса.
@@ -40,7 +40,7 @@ function About() {
       </section>
       <section className="section section_right">
         <Circle />
-        <article>
+        <article className="section__article">
           <p className="section__text">
             Мы занимаемся разработкой приложений и интеграций для CRM.
           </p>
