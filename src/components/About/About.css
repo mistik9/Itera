@@ -68,6 +68,7 @@
 .lead__title {
   font-size: 54px;
   position: absolute;
+
   top: 130px;
   left: 580px;
 }
@@ -172,7 +173,7 @@
 @media screen and (max-width: 820px) {
   .lead__title {
     font-size: 42px;
-    top: 150px;
+     top: 150px;
     left: 460px;
   }
   .lead__subtitle {
@@ -190,7 +191,9 @@
     font-size: 18px;
     z-index: 1;
     position: relative;
-    margin: 10px 35px;
+    
+
+    /* margin: 10px 35px; */
   }
 
   .d11 {

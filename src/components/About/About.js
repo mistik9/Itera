@@ -1,26 +1,52 @@
 import React from "react";
-import Circle from "../Circle/Circle";
-import "./About.css"
+import { Circle } from "../Circle/Circle"
+import "./About.css";
+import { motion } from 'framer-motion'
 
+const textAnimation = {
+  hidden: {
+    x: -200,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 }
+  }),
+}
+
+const pictureAnimation = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.4, ease: "easeInOut" }
+  },
+}
 function About() {
 
   return (
     <>
-      <section className="lead section" id="about">
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount:0.3, once: true}}
+        className="lead section" id="about">
         <div className="d1">
           <div className="d2">
             <div className="d3">
               <div className="d4">
                 <div className="d5">
-                  <div className="d6"></div>
+                  <motion.div variants={pictureAnimation} custom={1} className="d6"></motion.div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <h1 className="lead__title">ITera</h1>
-        <p className="lead__subtitle">Открой новые возможности</p>
-      </section>
+        <motion.h1 variants={textAnimation} custom={1} className="lead__title">ITera</motion.h1>
+        <motion.p variants={textAnimation} custom={2} className="lead__subtitle">Открой новые возможности</motion.p>
+      </motion.section>
       <section className="section ">
         <Circle />
         <article className="section__article">
