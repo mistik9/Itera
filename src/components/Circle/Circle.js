@@ -1,10 +1,11 @@
-import React from "react";
+import React, {forwardRef} from "react";
+import {motion} from "framer-motion";
 
 
-function Circle() {
+export const Circle = forwardRef(({},ref) =>{
 
     return (
-        <div className="d11">
+        <div ref={ref} className="d11" >
             <div className="d21">
                 <div className="d31">
                     <div className="d41">
@@ -17,5 +18,6 @@ function Circle() {
         </div>
 
     )
-}
-export default Circle;
+})
+
+export const MCircle = motion(Circle);

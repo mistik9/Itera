@@ -22,6 +22,7 @@ function FaqItem({ faq }) {
     return (
         <>
             {faq?.filter((item) => item.id === id).map((item) => (
+
                 <div key={item.id}>
                     <div className="faq__block" key={item.id} onClick={() => navigate(-1)}>
                         <div className="faq__icon faq__icon_minus" > </div>
@@ -36,8 +37,8 @@ function FaqItem({ faq }) {
                         ))}
                         {item?.text}
                         <div className="faq__support">
-                            {item?.support ? <a className="section__icon section__icon_tg" href={support} target="_blank" rel="noreferrer"></a> : null}
-                            {item?.support_wa ? <a className="section__icon section__icon_wa" href={support_wa} target="_blank" rel="noreferrer"></a> : null}
+                            {item.support && <a className="section__icon section__icon_tg" href="https://t.me/+79958454368" target="_blank" rel="noreferrer"></a>}
+                            {item.support_wa && <a className="section__icon section__icon_wa" href="https://wa.me/79958454368?text=" target="_blank" rel="noreferrer"></a>}
                         </div>
                     </ul>
                 </div>

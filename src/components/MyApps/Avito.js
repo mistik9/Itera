@@ -2,7 +2,7 @@ import React from "react";
 import Sector from "../Sector/Sector";
 import Faq from "../Faq/Faq";
 import Fix from "../Fix/Fix";
-import { faq_avito, desc_avito, updates_avito } from "../../utils/const";
+import { desc_avito, updates_avito } from "../../utils/const";
 
 function AvitoApp() {
     let decsItem = desc_avito.list?.map((i) => <li key={i.text} className="my-app__list-item">{i.text}</li>)

@@ -5,24 +5,28 @@
 
 .my-apps__container {
   display: grid;
-  gap: 50px;
-  grid-template-columns: auto auto;
+  gap: 30px;
+  grid-template-columns:auto auto auto;
   justify-content: center;
   width: 100%;
+  margin-top: 50px;
 }
 
 .my-apps__item {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 20px;
-  padding: 30px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   background-color: #02283f;
   box-shadow: 0 4px 12px 0 #24242c85;
-  transition: transform 4s ease-in-out 1s;
+  transition: transform 0.8s ease-in-out 1s;
   cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .my-apps__item:hover {
@@ -32,7 +36,21 @@
 }
 
 .my-apps__img {
-  height: 75px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #5086b6;
+  box-shadow: 0 4px 12px 0 #5086b652;
+  padding: 5px;
+  position: absolute;
+  top:-30px;
+  left:-20px
+}
+
+
+.my-apps__text {
+  margin: 0;
+  line-height: 150%;
+  text-align: center;
 }
 
 .my-app {
@@ -55,6 +73,7 @@
   border-radius: 5px;
   grid-row-start: 1;
   grid-row-end: 4;
+  box-shadow: 0 4px 12px 0 #5086b6;
 }
 
 .my-app__title {
@@ -64,6 +83,7 @@
 
 .my-app__text {
   margin: 0;
+  line-height: 150%;
 }
 
 .my-app__text_invisible {
@@ -93,6 +113,7 @@
   cursor: pointer;
   text-decoration: none;
   color: #9090a0;
+  border-radius: 5px;
 }
 
 .my-app__link_active {
@@ -144,11 +165,17 @@
   background-image: url(../../image/minus.png);
 }
 
+@media screen and (max-width: 850px) {
+  .my-apps__container {
+    grid-template-columns: auto auto;
+  }
+}
+
 @media screen and (max-width: 670px) {
   .my-apps__container {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 35px;
     grid-template-columns: auto;
   }
   .my-app__menu {
@@ -160,4 +187,9 @@
     justify-items: center;
     grid-template-columns: 1fr;
   }
+  .my-apps__item {
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    }
 }

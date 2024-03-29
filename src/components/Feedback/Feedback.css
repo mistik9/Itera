@@ -1,10 +1,11 @@
 .feedback {
-  align-items: flex-start;
   gap: 45px;
+  padding:30px;
 }
 
 .feedback__form {
   display: grid;
+  min-width: 320px;
   row-gap: 10px;
 }
 
