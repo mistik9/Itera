@@ -353,7 +353,7 @@ export const faq_autoload = [
       },
       { link: "https://newitera.ru/screen/autoload/17.png" },
     ],
-    id: "price-edit-autoload",
+    id: "where-my-price",
   },
 ];
 export const desc_autoload = {

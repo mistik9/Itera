@@ -36,7 +36,7 @@
 }
 
 .my-app {
-  padding: 50px;
+  padding: 70px;
   position: relative;
   z-index: 1;
   line-height: 150%;
@@ -127,6 +127,7 @@
 .my-app__subtitle {
   margin: 0 0 20px;
   font-size: 18px;
+  font-weight: 400;
 }
 
 .my-app__icon {
