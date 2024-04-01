@@ -43,13 +43,15 @@ function MyApps() {
         <NavLink to="/drom-app" className="section__link">
           <motion.div variants={blockAnimation} custom={1} className="my-apps__item">
             <img className="my-apps__img" src={app} alt="иконка" />
-            <p className="my-apps__text ">Интеграция диалогов, товаров, объявлений о продаже автомобилей и сделок на сайте Дром с порталом Битрикс24.</p>
+            <h4 className="my-apps__subtitle">ДРОМ: чаты, сделки, товары </h4>
+            <p className="my-apps__text ">Интеграция диалогов, сделок, объявлений о продаже запчастей и автомобилей.</p>
             <p className="section__text section__text_sm"> Подробнее 	&#8594;</p>
           </motion.div>
         </NavLink>
         <NavLink to="/avito-app" className="section__link" >
           <motion.div variants={blockAnimation} custom={2} className="my-apps__item">
             <img className="my-apps__img" src={app} alt="иконка" />
+            <h4 className="my-apps__subtitle">Avito: чаты и товары </h4>
             <p className="my-apps__text ">Интеграция диалогов и товаров на сайте Avito с порталом Битрикс24.</p>
             <p className="section__text section__text_sm"> Подробнее 	&#8594;</p>
           </motion.div>
@@ -57,6 +59,7 @@ function MyApps() {
         <NavLink to="/autoload" className="section__link" >
           < motion.div variants={blockAnimation} custom={3} className="my-apps__item">
             <img className="my-apps__img" src={app} alt="иконка" />
+            <h4 className="my-apps__subtitle">Avito: автозагрузка</h4>
             <p className="my-apps__text ">Aвтозагрузка товаров или услуг с портала Битрикс24 на Avito.</p>
             <p className="section__text section__text_sm"> Подробнее 	&#8594;</p>
           </motion.div>

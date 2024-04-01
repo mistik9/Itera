@@ -1,6 +1,6 @@
 import React from "react";
 import ImgPopup from "../ImgPopup/ImgPopup";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 
 
 function FaqItem({ faq }) {
@@ -8,6 +8,7 @@ function FaqItem({ faq }) {
     const [selectedItem, setSelectedItem] = React.useState(null);
     const { id } = useParams();
     const navigate = useNavigate();
+    const path = useLocation().pathname.replace(/[^\/]+$/, '');//обрезать последнюю часть url
 
 
     function closePopup() {
@@ -20,11 +21,11 @@ function FaqItem({ faq }) {
     }
 
     return (
-        <>
+        <div className="faq">
             {faq?.filter((item) => item.id === id).map((item) => (
 
                 <div key={item.id}>
-                    <div className="faq__block" key={item.id} onClick={() => navigate(-1)}>
+                    <div className="faq__block" key={item.id} onClick={() => navigate(`${path}`)}>
                         <div className="faq__icon faq__icon_minus" > </div>
                         <h4 className="faq__subtitle">{item.title}</h4>
                     </div>
@@ -44,7 +45,7 @@ function FaqItem({ faq }) {
                 </div>
             ))}
             <ImgPopup selectedItem={selectedItem} onclose={closePopup} isPopupOpen={isPopupOpen} />
-        </>
+        </div>
     )
 };
 

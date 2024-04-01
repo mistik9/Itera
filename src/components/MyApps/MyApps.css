@@ -35,6 +35,11 @@
   color: #9090a0;
 }
 
+.my-apps__subtitle {
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+}
 .my-apps__img {
   height: 60px;
   border-radius: 50%;
@@ -182,10 +187,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+    padding: 20px;
   }
   .my-app__title-container {
     justify-items: center;
     grid-template-columns: 1fr;
+    padding: 20px;
   }
   .my-apps__item {
     padding: 15px;
