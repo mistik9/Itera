@@ -13,7 +13,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Faq from "../Faq/Faq";
 import FaqItem from "../Faq/FaqItem";
-import { faq_autoload, faq_avito } from "../../utils/const";
+import { faq_autoload, faq_avito, faq_drom } from "../../utils/const";
 
 function App() {
 
@@ -30,7 +30,8 @@ function App() {
 
         <Route path="drom-app" element={<DromLayout />}>
           <Route index element={<DromApp />} />
-          <Route path="faq" element={<Faq />} />
+          <Route path="faq" element={<Faq faq={faq_drom}/>} />
+          <Route path="faq/:id" element={<FaqItem faq={faq_drom} />} />
         </Route>
 
         <Route path="autoload" element={<AutoloadLayout />} >
