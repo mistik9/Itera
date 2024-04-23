@@ -22,6 +22,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        
         <Route path="/avito-app" element={<AvitoLayout />}>
           <Route index element={<AvitoApp />} />
           <Route path="faq" element={<Faq faq={faq_avito} />} />

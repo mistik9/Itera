@@ -1,28 +1,28 @@
 import React from "react";
-import "./Feedback.css"
+import "./Feedback.css";
+
 
 function Feedback() {
+    React.useEffect(() => {
+        const script = document.createElement("script")
+        script.src = 'https://cdn-ru.bitrix24.ru/b27494460/crm/form/loader_6.js' + '?' + (Date.now() / 180000 | 0)
+        script.async = true
+        script.setAttribute("data-b24-form", "inline/6/0ggjxc");
+        script.setAttribute("data-skip-moving", "true");
+        const feedback = document.getElementById('feedback')
+        feedback.prepend(script)
+        return () => {
+            feedback.removeChild(script)
+        }
+    }, [])
+
 
     return (
         <section className="section feedback" id="feedback">
-            <form className="feedback__form" action="mailto:info@newitera.ru" encType="text/plain">
-                <h2 className="section__title">Оставить заявку</h2>
-                <label className="feedback__label">Имя</label>
-                <input className="feedback__input" type="name" placeholder="Олег" required/>
-                <label className="feedback__label">Почта</label>
-                <input className="feedback__input" type="email" placeholder="example@yandex.ru" required/>
-                <label className="feedback__label">Телефон</label>
-                <input className="feedback__input" type="tel" placeholder="+7(999)999-99-99" required/>
-                <label className="feedback__label">
-                    <input className="feedback__checkbox" type="checkbox" required/> Принимаю
-                    условия политики конфиденциальности</label>
-                <button className="feedback__btn" type="submit" disabled="">
-                    Отправить
-                </button>
-            </form>
+
             <div className="feedback__contact">
                 <p className="feedback__text">
-                    Расскажите о пректе, задайте вопросы — мы будем рады помочь вам
+                    Расскажите о проекте, задайте вопросы — мы будем рады помочь вам
                 </p>
                 <a className="section__link" href="mailto:info@newitera.ru">info@newitera.ru</a>
                 <a className="section__link" href="tel:+79958454368">+7 995 845 43 68</a>

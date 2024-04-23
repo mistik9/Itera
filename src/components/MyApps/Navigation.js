@@ -3,7 +3,7 @@ import React from "react";
 
 
 
-function Nav() {
+function Navigation() {
     return (
         <div className="nav">
             <ul className="nav__list" >
@@ -18,4 +18,4 @@ function Nav() {
 
     )
 }
-export default Nav
+export default Navigation
