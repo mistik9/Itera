@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import SEO from "../SEO/SEO";
 
 function AvitoLayout() {
@@ -19,7 +18,7 @@ function AvitoLayout() {
                 <img className="my-app__img" src="//util.1c-bitrix.ru/upload/bx24vendor/79b/h6uy1w7mfdv1hfb9uduq2kf91vzm0z4p/лого2.png" alt="иконка"></img>
                 <h3 className="my-app__title">{title}</h3>
                 <p className="my-app__text">{description}</p>
-                <a href={href} target="_blank" className="my-app__link">Ссылка на приложение </a>
+                <a href={href} target="_blank" rel="noreferrer" className="my-app__link">Ссылка на приложение </a>
             </div>
             <div className="my-app__menu">
                 <NavLink to="/avito-app/" className={({ isActive }) => isActive ? "my-app__menu-item my-app__link my-app__link_active" : "my-app__menu-item my-app__link "} >

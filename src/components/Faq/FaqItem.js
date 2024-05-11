@@ -20,11 +20,10 @@ function FaqItem({ faq, item }) {
         setIsPopupOpen(true)
         setSelectedImg(e.target.src)
     }
-
     return (
         <>
             <Helmet>
-                <meta description={selectedItem?.title} />
+                <meta name="description" content={selectedItem?.title} />
             </Helmet>
             <div className="faq">
                 {faq?.filter((item) => item.id === id).map((item) => (

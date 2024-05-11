@@ -1,12 +1,12 @@
 import React from "react";
 import Sector from "../Sector/Sector";
-import Faq from "../Faq/Faq";
+
 import Fix from "../Fix/Fix";
-import { faq_autoload, about_autoload, desc_autoload, updates_autoload } from "../../utils/const";
+import { about_autoload, desc_autoload, updates_autoload } from "../../utils/const";
 
 
 function Autoload() {
-    let decsItem = desc_autoload.list?.map((i) => <li key={i.text} className="my-app__list-item">{i.text}</li>)
+    const decsItem = desc_autoload.list?.map((i) => <li key={i.text} className="my-app__list-item">{i.text}</li>)
 
     return (
   
