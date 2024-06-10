@@ -64,6 +64,14 @@ function MyApps() {
             <p className="section__text section__text_sm"> Подробнее 	&#8594;</p>
           </motion.div>
         </NavLink>
+        <NavLink to="/avitojob" className="section__link" >
+          < motion.div variants={blockAnimation} custom={3} className="my-apps__item">
+            <img className="my-apps__img" src={app} alt="иконка" />
+            <h4 className="my-apps__subtitle">Avito: отклики и вакансии</h4>
+            <p className="my-apps__text ">Чат, номер телефона кандидата, отклик и резюме в одном лиде или сделке портала Битрикс24.</p>
+            <p className="section__text section__text_sm"> Подробнее 	&#8594;</p>
+          </motion.div>
+        </NavLink>
       </div>
     </motion.section>
   )

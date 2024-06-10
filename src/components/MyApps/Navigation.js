@@ -4,16 +4,11 @@ import React from "react";
 
 
 function Navigation() {
+
     return (
-        <div className="nav">
-            <ul className="nav__list" >
-                <li className="nav__list-item">
-                    <NavLink to="/" className={({ isActive }) => `nav__link ${isActive ? "nav__link_active" : ""}`}> Описание </NavLink>
-                </li>
-                <li className="nav__list-item">
-                    <NavLink to="/" className={({ isActive }) => `nav__link ${isActive ? "nav__link_active" : ""}`}>Вопросы и ответы</NavLink>
-                </li>
-            </ul>
+        <div className="nav__menu">
+            <NavLink to="./" className={({ isActive }) => isActive ? "nav__menu-item nav__link nav__link_active" : "nav__menu-item nav__link "} end> Описание </NavLink>
+            <NavLink to="./faq" className={({ isActive }) => isActive ? "nav__menu-item nav__link nav__link_active" : "nav__menu-item nav__link "}>Вопросы и ответы</NavLink>
         </div>
 
     )

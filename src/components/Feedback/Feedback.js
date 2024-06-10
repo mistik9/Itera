@@ -18,7 +18,7 @@ function Feedback() {
 
 
     return (
-        <section className="section feedback" id="feedback">
+        <section className="feedback" id="feedback">
 
             <div className="feedback__contact">
                 <p className="feedback__text">

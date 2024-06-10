@@ -8,12 +8,15 @@ import DromApp from "../MyApps/Drom";
 import DromLayout from "../MyApps/DromLayout";
 import Autoload from "../MyApps/Autoload";
 import AutoloadLayout from "../MyApps/AutoloadLayout";
+import AvitoJob from "../MyApps/AvitoJob";
+import AvitoJobLayout from "../MyApps/AvitoJobLayout";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Faq from "../Faq/Faq";
 import FaqItem from "../Faq/FaqItem";
-import { faq_autoload, faq_avito, faq_drom } from "../../utils/const";
+import { faq_autoload, faq_avito, faq_drom, faq_avitojob } from "../../utils/const";
+
 
 function App() {
 
@@ -39,6 +42,11 @@ function App() {
           <Route index element={<Autoload />} />
           <Route path="faq" element={<Faq faq={faq_autoload} />} />
           <Route path="faq/:id" element={<FaqItem faq={faq_autoload} />} />
+        </Route>
+        <Route path="avitojob" element={<AvitoJobLayout />} >
+          <Route index element={<AvitoJob />} />
+          <Route path="faq" element={<Faq faq={faq_avitojob} />} />
+          <Route path="faq/:id" element={<FaqItem faq={faq_avitojob} />} />
         </Route>
 
         <Route path="*" element={<PageNotFound />} />
