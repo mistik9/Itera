@@ -25,19 +25,21 @@ function FaqItem({ faq, item }) {
             <Helmet>
                 <meta name="description" content={selectedItem?.title} />
             </Helmet>
-            <div className="faq">
-                {faq?.filter((item) => item.id === id).map((item) => (
+        
+                {faq?.filter((item) => item.id === id).map((item, index) => (
 
-                    <div key={item.id}>
+                    <div className="faq" key = {index}>
                         <div className="faq__block" key={item.id} onClick={() => navigate(`${path}`)}>
                             <div className="faq__icon faq__icon_minus" > </div>
                             <h4 className="faq__subtitle">{item.title}</h4>
                         </div>
                         <ul className="faq__list" >
                             {item?.list?.map((i, index) => (
-                                <li key={i.text} className="faq__list-item">
+                                <li key={index} className="faq__list-item">
                                     <p className="faq__text">{i.text}</p>
+                                    <div className="faq__img-container">
                                     {i.link ? <img className="faq__img" src={i.link} alt="скриншот" onClick={onClickImg}></img> : null}
+                                    </div>
                                 </li>
                             ))}
                             {item?.text}
@@ -49,7 +51,7 @@ function FaqItem({ faq, item }) {
                     </div>
                 ))}
                 <ImgPopup selectedImg={selectedImg} onclose={closePopup} isPopupOpen={isPopupOpen} />
-            </div>
+         
         </>
     )
 };
