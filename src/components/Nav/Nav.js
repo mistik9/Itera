@@ -7,7 +7,9 @@ function Nav() {
         <nav className="nav">
             <Link className="nav__link" to="/#about">О компании</Link>
             <Link className="nav__link" to="/#my-apps">Наши приложения</Link>
+            <Link className="nav__link" to="/news">Новости</Link>
             <Link className="nav__link" to="/#feedback">Контакты</Link>
+            
         </nav>
     )
 }

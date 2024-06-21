@@ -64,6 +64,8 @@
   position: relative;
   z-index: 1;
   line-height: 150%;
+  display: grid;
+  gap: 10px;
 }
 
 .my-app__title-container {
@@ -105,7 +107,8 @@
 }
 
 .nav__menu-item {
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  box-shadow: inset 0 0 20px 13px rgb(0 0 0 / 7%);
   margin: 0;
   padding: 20px 0;
   height: 100%;
@@ -152,7 +155,7 @@
 }
 
 .my-app__subtitle {
-  margin: 0 0 20px;
+  margin: 0 ;
   font-size: 18px;
   font-weight: 400;
 }

@@ -20,7 +20,7 @@ function Autoload() {
                     * Чтобы пользоваться данным приложением, на Авито у Вас должен быть подключен соответствующий тариф, включающий Автозагрузку.
                 </p>
 
-                {/* <h4 className="my-app__subtitle">Обновления:</h4> */}
+                <h4 className="my-app__subtitle">Обновления:</h4>
                 {updates_autoload.map(item =>
                     <Fix
                         key={item.list_name}

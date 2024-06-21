@@ -11,6 +11,7 @@ import AutoloadLayout from "../MyApps/AutoloadLayout";
 import AvitoJob from "../MyApps/AvitoJob";
 import AvitoJobLayout from "../MyApps/AvitoJobLayout";
 import PageNotFound from "../PageNotFound/PageNotFound";
+import News from "../News/News";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Faq from "../Faq/Faq";
@@ -48,7 +49,7 @@ function App() {
           <Route path="faq" element={<Faq faq={faq_avitojob} />} />
           <Route path="faq/:id" element={<FaqItem faq={faq_avitojob} />} />
         </Route>
-
+        <Route path="/news" element={<News />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
