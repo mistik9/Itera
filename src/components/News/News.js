@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./News.css"
 import { updates_autoload, updates_avito, updates_drom, updates_avitojob } from "../../utils/const";
 
@@ -19,17 +20,24 @@ function News() {
 
     return (
         <div className="news">
+ 
             <h2 className="news__title">Новости</h2>
             <ul className="news__list">
-            {resArrConverted.map((i) =>
-                <li className="news__list-item">
-                    {console.log(i)}
-                    <p className="news__list-period">{i.period}</p>
-                    <h4 className="news__list-title">{i.title}</h4>
-                    {i.list?.map(el => <p className="news__text">{el.text}</p>)}
-                </li>
-            )}
-</ul>
+                {resArrConverted.map((i) =>
+                    <li className="news__list-item">
+                        <p className="news__list-period">{i.period}</p>
+                        {i.title === "Avito: автозагрузка" ?
+                            <NavLink to="/autoload" className="news__list-title">{i.title}</NavLink> :
+                            i.title === "Avito: чаты и товары" ?
+                                <NavLink to="/avito-app" className="news__list-title">{i.title}</NavLink> :
+                                i.title === "ДРОМ: чаты, сделки, товары" ?
+                                    <NavLink to="/drom-app" className="news__list-title" >{i.title}</NavLink> :
+                                    <NavLink to="/avitojob" className="news__list-title" >{i.title}</NavLink>
+                        }
+                        {i.list?.map(el => <p className="news__text">{el.text}</p>)}
+                    </li>
+                )}
+            </ul>
         </div>
     )
 };

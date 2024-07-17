@@ -27,6 +27,8 @@
 .news__list-title {
 margin:0;
 color: #5086b6;
+text-decoration: none;
+font-weight: 600;
 }
 
 .news__text{
