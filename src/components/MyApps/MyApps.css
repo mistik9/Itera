@@ -91,7 +91,7 @@
 
 .my-app__text {
   margin: 0;
-  line-height: 150%;
+  line-height: 200%;
 }
 
 .my-app__text_invisible {
@@ -136,6 +136,7 @@
 
 .my-app__list-item {
   font-weight: 400;
+
 }
 
 .my-app__text-span {
@@ -173,6 +174,25 @@
 .my-app__icon_minus {
   background-image: url(../../image/minus.png);
 }
+
+.my-app__navlink {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 20px;
+  /* text-shadow: 3px 2px 10px #5086b6; */
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+  padding-bottom: 5px;
+}
+
+.my-app__navlink:hover {
+  background-size: 100% 2px;
+}
+
 
 @media screen and (max-width: 850px) {
   .my-apps__container {

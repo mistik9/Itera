@@ -1,16 +1,16 @@
 export const desc_avito = {
   list_name: "Главные преимущества приложения:",
   list: [
-    { text: "Простота подключения! Подключение в несколько кликов!" },
-    { text: "Возможность отправлять фото из Битрикс24 в диалог на Avito" },
+    { text: "Возможность отправлять фото из Битрикс24 на Avito" },
+    { text: "Подключение любого количества аккаунтов Avito" },
     {
-      text: "Загрузка данных из Avito на портал Битрикс24, в соответствии с пользовательскими настройками",
+      text: "Загрузка данных из Avito на портал Битрикс24, в соответствии с Вашими настройками",
     },
     {
-      text: "Название и иконка диалога в открытых линиях соответствует объявлению, в которое пишет клиент",
+      text: "Получение исходящих сообщений, отправленных напрямую в чате Avito, на портале Битрикс24",
     },
     {
-      text: "Возможность получения сообщений на портале Битрикс24, отправленных напрямую в чате Авито"
+      text: "Настройка работы с сотрудниками как в кабинете Avito Pro"
     }
   ],
 };
@@ -122,24 +122,25 @@ export const faq_avito = [
       {
         text: 'Перейдите в CRM, далее Контакт-центр и выберите коннектор "Avito: чаты и товары"',
       },
-      { link: "https://newitera.ru/screen/1.jpg" },
-      { link: "https://newitera.ru/screen/2.jpg" },
+      { link: "https://newitera.ru/screen/1.png" },
+      { link: "https://newitera.ru/screen/2.png" },
       {
         text: 'Выберите открытую линию, если ее нет, нажмите "Создать открытую линию ',
       },
-      { link: "https://newitera.ru/screen/3.jpg" },
+      { link: "https://newitera.ru/screen/3.png" },
       { text: 'Нажмите "Подключить".' },
-      { link: "https://newitera.ru/screen/4.jpg" },
+      { link: "https://newitera.ru/screen/4.png" },
+      { link: "https://newitera.ru/screen/5.png" },
       {
-        text: "Если Вы уже авторизовались под своим вторым аккаунтом в текущем браузере, то см. следующий пункт, если нет, то пройдите авторизацию на Avito",
+        text: "Если Вы уже авторизовались под своим аккаунтом в текущем браузере, то см. следующий пункт, если нет, то пройдите авторизацию на Avito",
       },
-      { link: "https://newitera.ru/screen/5.jpg" },
-      { link: "https://newitera.ru/screen/6.jpg" },
+      { link: "https://newitera.ru/screen/6.png" },
+      { link: "https://newitera.ru/screen/7.png" },
       {
         text: "Появится окно, в котором будут перечислены доступы, которые запрашивает приложение у Вашего аккаунта, нажмите продолжить",
       },
       { text: "Готово, аккаунт подключен!" },
-      { link: "https://newitera.ru/screen/7.jpg" },
+      { link: "https://newitera.ru/screen/8.png" },
     ],
     id: "first-connect",
   },
@@ -149,24 +150,27 @@ export const faq_avito = [
       {
         text: 'Перейдите в Контакт-центр и выберите коннектор "Avito: чаты и товары"',
       },
-      { link: "https://newitera.ru/screen/1.jpg" },
-      { link: "https://newitera.ru/screen/2.jpg" },
+      { link: "https://newitera.ru/screen/1.png" },
+      { link: "https://newitera.ru/screen/2.png" },
       {
         text: 'Выберите другую открытую линию, отличную от той, куда подключён первый аккаунт "Avito", если ее нет, нажмите "Создать открытую линию" ',
       },
-      { link: "https://newitera.ru/screen/3.jpg" },
+      { link: "https://newitera.ru/screen/3.png" },
       { text: 'Нажмите "Подключить".' },
-      { link: "https://newitera.ru/screen/4.jpg" },
+      { link: "https://newitera.ru/screen/4.png" },
+      { link: "https://newitera.ru/screen/5.png" },
       {
         text: "Если Вы уже авторизовались под своим вторым аккаунтом в текущем браузере то см. следующий пункт, если нет, то пройдите авторизацию на Avito",
       },
-      { link: "https://newitera.ru/screen/5.jpg" },
-      { link: "https://newitera.ru/screen/6.jpg" },
-      {
+     
+      { link: "https://newitera.ru/screen/6.png" },
+      { link: "https://newitera.ru/screen/10.png" },
+      { link: "https://newitera.ru/screen/7.png" },
+            {
         text: "Появится окно, в котором будут перечислены доступы, которые запрашивает приложение у Вашего аккаунта, нажмите продолжить",
       },
       { text: "Готово, аккаунт подключен!" },
-      { link: "https://newitera.ru/screen/7.jpg" },
+      { link: "https://newitera.ru/screen/8.png" },
     ],
     id: "second-connect",
   },
@@ -177,10 +181,13 @@ export const faq_avito = [
       {
         text: 'Перейдите в Контакт-центр и выберите коннектор "Avito: чаты и товары"',
       },
-      { link: "https://newitera.ru/screen/unplug openlines acc.jpg" },
+      
       { text: 'Нажмите кнопку "Отключить".' },
-      { link: "https://newitera.ru/screen/unplug openlines acc2.jpg" },
+      { link: "https://newitera.ru/screen/11.png" },
+      { link: "https://newitera.ru/screen/12.png" },
+      
       { text: "Готово, вы великолепны!" },
+      { link: "https://newitera.ru/screen/13.png" },
       {
         text: "Можно отключить только аккаунт Авито, без изменений настроек открытой линии",
       },
@@ -188,11 +195,12 @@ export const faq_avito = [
         text: 'Перейдите в Контакт-центр и выберите коннектор "Avito: чаты и товары"',
       },
       { text: 'Нажмите кнопку "Изменить".' },
-      { link: "https://newitera.ru/screen/unplug acc.jpg" },
+      { link: "https://newitera.ru/screen/9.png" },
       { text: 'Нажмите кнопку "Выйти".' },
-      { link: "https://newitera.ru/screen/unplug acc2.jpg" },
+      { link: "https://newitera.ru/screen/14.png" },
+
       { text: "Готово, отключен только аккаунт Авито!" },
-      { link: "https://newitera.ru/screen/unplug acc3.jpg" },
+      { link: "https://newitera.ru/screen/15.png" },
     ],
     id: "unplug",
   },
@@ -215,7 +223,7 @@ export const faq_avito = [
       {
         text: 'Тогда диалоги, лиды или сделки будут распределяться в соответствии с вашими настройками',
       },
-      { link: "https://newitera.ru/screen/employees.png" },
+      { link: "https://newitera.ru/screen/16.png" },
 
     ],
     id: "employees",
@@ -224,25 +232,26 @@ export const faq_avito = [
     title: "Как включить получение сообщений, отправленных напрямую в чате Авито?",
     list: [
       { text: 'В "Карточке CRM" в верхнем меню выбрать "Авито - Настройки"' },
-      { link: "https://newitera.ru/screen/9.jpg" },
+      { link: "https://newitera.ru/screen/17.png" },
       { text: 'Поставить галочку "Отображать в диалоге сообщения, отправленные напрямую из чата Avito?"' },
       { text: 'Нажмите "Сохранить".' },
     ],
     id: "message-from-avito",
   },
   {
-  title: "Как настроить автоматический ответ на первое сообщение?",
-  list: [
-  { text: 'Перейдите в CRM, далее Контакт-центр и выберите коннектор "Avito: чаты и товары"' },
-  { link: "https://newitera.ru/screen/10.png" },
-  { text: 'Выберите открытую линию к которой подключено приложение' },
-  { link: "https://newitera.ru/screen/11.png" },
-  { text: 'Нажмите кнопку "Настроить"' },
-  { link: "https://newitera.ru/screen/12.png" },
-  { text: 'В меню "Автоматические действия" вы можете настроить автоматический ответ на сообщение клиента' },
-  { link: "https://newitera.ru/screen/13.png" },
-],
-id: "auto-first-message",
+    title: "Как настроить автоматический ответ на первое сообщение?",
+    list: [
+      { text: 'Перейдите в CRM, далее Контакт-центр и выберите коннектор "Avito: чаты и товары"' },
+      { link: "https://newitera.ru/screen/1.png" },
+      { link: "https://newitera.ru/screen/2.png" },
+      { text: 'Выберите открытую линию к которой подключено приложение' },
+      { link: "https://newitera.ru/screen/3.png" },
+      { text: 'Нажмите кнопку "Настроить"' },
+      { link: "https://newitera.ru/screen/19.png" },
+      { text: 'В меню "Автоматические действия" вы можете настроить автоматический ответ на сообщение клиента' },
+      { link: "https://newitera.ru/screen/18.png" },
+    ],
+    id: "auto-first-message",
   },
   {
     title: "Какие данные получает приложение от Авито?",
@@ -276,7 +285,7 @@ id: "auto-first-message",
     title: "Как отключить автоматическое создание товаров?",
     list: [
       { text: 'В "Карточке CRM" в верхнем меню выбрать "Авито - Настройки"' },
-      { link: "https://newitera.ru/screen/8.jpg" },
+      { link: "https://newitera.ru/screen/20.png" },
       { text: 'Убрать галочку "Добавлять товар в Битрикс24?"' },
       { text: 'Нажмите "Сохранить".' },
     ],
@@ -298,9 +307,22 @@ id: "auto-first-message",
       {
         text: 'Для настройки приложения откройте любую сделку и в верхнем меню выберите "Авито - Настройки"',
       },
-      { link: "https://newitera.ru/screen/8.jpg" },
+      { link: "https://newitera.ru/screen/21.png" },
     ],
     id: "settings",
+  },
+  {
+    title: "Как при завершении диалога сделать диалог прочитанным на Авито?",
+    list: [
+      {
+        text: 'Откройте любую сделку и в верхнем меню выберите "Авито - Настройки"',
+      },
+      {
+        text: 'Поставьте галочку "При завершении диалога в Битрикс24, делать прочитанным диалог на Авито',
+      },
+      { link: "https://newitera.ru/screen/22.png" },
+    ],
+    id: "make-it-read",
   },
   {
     title: "Как установить приложение ?",
@@ -326,7 +348,7 @@ id: "auto-first-message",
     title: "Связанные профили на Авито",
     list: [
       {
-        text: "Если у вас несколько профилей в связке, нужно подключить каждый профиль отдельно, чтобы сообщения приходи в Битрикс24",
+        text: "Если у вас несколько профилей в связке, нужно подключить каждый профиль отдельно, чтобы сообщения приходили в Битрикс24",
       },
       { text: "Авторизацию лучше проходить по email, т.к. номер телефона у связанных профилей может быть один" },
     ],
@@ -632,6 +654,15 @@ export const updates_avitojob = [
       {
         text: "В списке полей Битрикс24 отображается только поля, которые применимы к выбранному полю Авито",
       },
+
+    ],
+  },
+  {
+    list_name: "11.07.2024",
+    list: [
+      {
+        text: "В меню сотрудники, отображаются только те сотрудники Битрикс24, которые состоят в очереди текущей открытой линии, к которой подключен аккаунт Авито",
+      }
 
     ],
   }

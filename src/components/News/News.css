@@ -34,3 +34,22 @@ font-weight: 600;
 .news__text{
     margin:0;
 }
+
+.news__filter{
+    display: flex;
+    width: 100%;
+    gap:5px;
+}
+
+.news__btn{
+background: none;
+color: #5086b6;
+font-weight: 500;
+border:none;
+cursor: pointer;
+transition: color 0.8s;
+}
+
+.news__btn:hover {
+    color: #ffffff;
+}
