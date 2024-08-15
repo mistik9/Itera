@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
@@ -12,6 +12,7 @@ import AvitoJob from "../MyApps/AvitoJob";
 import AvitoJobLayout from "../MyApps/AvitoJobLayout";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import News from "../News/News";
+
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Faq from "../Faq/Faq";
@@ -21,12 +22,23 @@ import { faq_autoload, faq_avito, faq_drom, faq_avitojob } from "../../utils/con
 
 function App() {
 
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  function openMenu() {
+    setIsNavOpen(!isNavOpen)
+  
+  }
+
+
+
+
   return (
     <div className="app">
-      <Header />
+      
+      <Header isNavOpen={isNavOpen} openMenu={openMenu} setIsNavOpen ={setIsNavOpen}/>
       <Routes>
         <Route path="/" element={<Main />} />
-        
+
         <Route path="/avito-app" element={<AvitoLayout />}>
           <Route index element={<AvitoApp />} />
           <Route path="faq" element={<Faq faq={faq_avito} />} />
@@ -35,7 +47,7 @@ function App() {
 
         <Route path="drom-app" element={<DromLayout />}>
           <Route index element={<DromApp />} />
-          <Route path="faq" element={<Faq faq={faq_drom}/>} />
+          <Route path="faq" element={<Faq faq={faq_drom} />} />
           <Route path="faq/:id" element={<FaqItem faq={faq_drom} />} />
         </Route>
 
@@ -53,6 +65,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
+   
     </div>
   );
 }

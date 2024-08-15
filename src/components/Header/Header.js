@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../Nav/Nav";
 import logo from "../../image/logo.png"
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-function Header() {
+function Header({isNavOpen, openMenu, setIsNavOpen}) {
 
     return (
         <header className="header">
             <Link to="/">
-                <img className="header__logo" src={logo} alt="Лого" />
+                <img className={!isNavOpen? "header__logo": "header__logo header__logo_hidden" }src={logo} alt="Лого" />
             </Link>
-            <Nav />
+            <Nav isNavOpen={isNavOpen} openMenu={openMenu} setIsNavOpen={setIsNavOpen}/>
         </header>
     )
 }

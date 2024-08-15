@@ -12,7 +12,7 @@ function Footer() {
             <Link to="/">
                 <img className="footer__logo" src={logo} alt="Лого" />
             </Link>
-            <Nav />
+      
             <p className="footer__copyright">{`© ${currentDate}`}</p>
         </footer>
     )

@@ -11,8 +11,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <HelmetProvider>
-    <ScrollToTop />
-      <App />
+          <App />
+          <ScrollToTop />
       </HelmetProvider>
     </BrowserRouter>
   </React.StrictMode>

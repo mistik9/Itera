@@ -1,6 +1,7 @@
 .my-apps {
   flex-direction: column;
   align-items: flex-start;
+  padding: 50px;
 }
 
 .my-apps__container {
@@ -197,6 +198,16 @@
 @media screen and (max-width: 850px) {
   .my-apps__container {
     gap: 30px;
+  }
+  .my-apps {
+    padding: 25px;
+  }
+  .my-app {
+    padding: 25px;
+
+  }
+  .my-app__list  {
+    padding:0;
   }
 }
 @media screen and (max-width: 775px) {

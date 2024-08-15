@@ -8,7 +8,7 @@ function AutoloadLayout() {
   const description = "Выгружайте Ваши объявления на Avito из Битрикс24 автоматически."
   const href = "https://www.bitrix24.ru/apps/app/integrationpart.avito_avtozagruzka/"
   return (
-    <>
+    <section className="my-apps">
       <SEO
         title={title}
         description={description}
@@ -23,7 +23,7 @@ function AutoloadLayout() {
       </div>
       <Navigation />
       <Outlet />
-    </>
+    </section>
   )
 };
 

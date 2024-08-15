@@ -9,7 +9,7 @@ function AvitoLayout() {
     const href = "https://www.bitrix24.ru/apps/app/integrationpart.avito_chaty_sdelki_tovary/";
 
     return (
-        <>
+        <section className="my-apps">
             <SEO
                 title={title}
                 description={description}
@@ -23,7 +23,7 @@ function AvitoLayout() {
             </div>
             <Navigation />
             <Outlet />
-        </>
+        </section>
     )
 };
 

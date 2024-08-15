@@ -288,7 +288,7 @@ export const faq_avito = [
     id: "message-from-avito",
   },
   {
-    title: "Как настроить автоматический ответ на первое сообщение?",
+    title: "Основные настройки открытых линий",
     list: [
       { text: 'Перейдите в CRM, далее Контакт-центр и выберите коннектор "Avito: чаты и товары"' },
       { link: "https://newitera.ru/screen/1.png" },
@@ -297,8 +297,13 @@ export const faq_avito = [
       { link: "https://newitera.ru/screen/3.png" },
       { text: 'Нажмите кнопку "Настроить"' },
       { link: "https://newitera.ru/screen/19.png" },
+
       { text: 'В меню "Автоматические действия" Вы можете настроить автоматический ответ на сообщение клиента' },
       { link: "https://newitera.ru/screen/18.png" },
+      { text: 'В меню "Очередь" Вы можете настроить отображение информации о операторах. Так же настроить, что создавать при обращении клиента лид/сделка' },
+      { link: "https://newitera.ru/screen/29.png" },
+      { text: 'В меню "Оценка качества" Вы можете настроить оценку качества или отключить ее' },
+      { link: "https://newitera.ru/screen/30.png" },
     ],
     id: "auto-first-message",
   },

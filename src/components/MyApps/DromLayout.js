@@ -9,7 +9,7 @@ function DromLayout() {
     const href = "https://www.bitrix24.ru/apps/app/integrationpart.drom_chaty_sdelki_tovary/"
 
     return (
-        <>
+        <section className="my-apps">
             <SEO
                 title={title}
                 description={description}
@@ -23,7 +23,7 @@ function DromLayout() {
             </div>
             <Navigation />
             <Outlet />
-        </>
+        </section>
 
     )
 };

@@ -26,7 +26,7 @@ function News() {
     };
 
     return (
-        <div className="news">
+        <section className="news">
 
             <h2 className="news__title">Новости</h2>
             <div className="news__filter">
@@ -40,10 +40,10 @@ function News() {
             </div>
             <ul className="news__list">
                 {news.map((i) =>
-                    <li className="news__list-item">
+                    <li className="news__list-item" key={i.period}>
                         <p className="news__list-period">{i.period}</p>
                         {i.title === "Avito: автозагрузка" ?
-                            <NavLink to="/autoload" className="news__list-title">{i.title}</NavLink> :
+                            <NavLink to="/autoload" className="news__list-title" >{i.title}</NavLink> :
                             i.title === "Avito: чаты и товары" ?
                                 <NavLink to="/avito-app" className="news__list-title">{i.title}</NavLink> :
                                 i.title === "ДРОМ: чаты, сделки, товары" ?
@@ -54,7 +54,7 @@ function News() {
                     </li>
                 )}
             </ul>
-        </div>
+        </section>
     )
 };
 

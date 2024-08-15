@@ -31,7 +31,7 @@ function About() {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount:0.3, once: true}}
+        viewport={{ amount: 0.3, once: true }}
         className="lead section" id="about">
         <div className="d1">
           <div className="d2">
@@ -47,7 +47,7 @@ function About() {
         <motion.h1 variants={textAnimation} custom={1} className="lead__title">ITera</motion.h1>
         <motion.p variants={textAnimation} custom={2} className="lead__subtitle">Открой новые возможности</motion.p>
       </motion.section>
-      <section className="section ">
+      <section className="section " id="about">
         <Circle />
         <article className="section__article">
           <p className="section__text">

@@ -13,7 +13,7 @@ function AvitoJobLayout ()  {
 
     return (
 
-        <>
+        <section className="my-apps">
             <SEO
                 title={title}
                 description={description}
@@ -29,7 +29,7 @@ function AvitoJobLayout ()  {
             <Navigation />
             <Outlet />
 
-        </>
+        </section>
     )
 };
 
