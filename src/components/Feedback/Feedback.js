@@ -1,5 +1,6 @@
 import React from "react";
 import "./Feedback.css";
+import bx from "../../image/bitrix24_partner.png";
 
 
 function Feedback() {
@@ -21,6 +22,7 @@ function Feedback() {
         <section className="feedback" id="feedback">
 
             <div className="feedback__contact">
+            <img className="feedback__bx" src={bx} alt="Битрикс24 партнер" />
                 <p className="feedback__text">
                     Расскажите о проекте, задайте вопросы — мы будем рады помочь вам
                 </p>

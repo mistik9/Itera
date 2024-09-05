@@ -5,6 +5,10 @@
   padding:50px;
   
 }
+.feedback__bx {
+  max-width: 150px;
+  /* background-color:  #2fc7f7; */
+}
 
 .feedback__form {
   display: grid;

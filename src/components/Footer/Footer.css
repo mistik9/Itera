@@ -1,6 +1,7 @@
 .footer {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto  1fr;
+  gap:20px;
   justify-items: end;
   align-items: center;
   padding: 50px;
