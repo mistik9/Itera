@@ -1,11 +1,10 @@
-import React from "react";
-import "./Faq.css";
-import FaqItem from "./FaqItem";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './Faq.css';
+import { Link } from 'react-router-dom';
+import FaqItem from './FaqItem';
 
 function Faq({ faq }) {
-
-    const renderFaq = faq?.map(item => (
+  const renderFaq = faq?.map((item) => (
         <Link className="faq__link" to={`${item.id}`} key={item.id}>
             <div className="faq__block">
                 <div className="faq__icon"> </div>
@@ -13,9 +12,9 @@ function Faq({ faq }) {
             </div>
             <FaqItem item={item} />
         </Link>
-    ))
+  ));
 
-    return (
+  return (
         <div className="faq">
             {faq ? (renderFaq) : (
                 <div className="my-app__title-container" >
@@ -24,7 +23,7 @@ function Faq({ faq }) {
             )}
         </div >
 
-    )
+  );
 }
 
 export default Faq;

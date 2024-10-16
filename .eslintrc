@@ -1,10 +1,13 @@
 {
 "extends": [
-    "react-app"
+    "react-app",
+    "airbnb-base"
 ],
 "rules": {
     "no-console": "warn",
-    "prefer-const":"warn"
-   
+    "prefer-const":"warn",
+    "no-underscore-dangle":  ["warn", { "allow": ["faq_autoload", "faq_avito", "faq_drom", "faq_avitojob","about_autoload", "desc_autoload"] }],
+    "max-len": ["warn", { "code": 160 }],
+    "no-nested-ternary": "warn"
 }
 }

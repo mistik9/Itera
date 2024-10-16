@@ -1,59 +1,56 @@
-import React from "react";
-import ImgPopup from "../ImgPopup/ImgPopup";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-
+import React from 'react';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import ImgPopup from '../ImgPopup/ImgPopup';
 
 function FaqItem({ faq, item }) {
-    const [isPopupOpen, setIsPopupOpen] = React.useState(false);
-    const [selectedImg, setSelectedImg] = React.useState(null);
-    const { id } = useParams();
-    const navigate = useNavigate();
-    const path = useLocation().pathname.replace(/[^\/]+$/, '');//обрезать последнюю часть url
-    const selectedItem = faq?.filter((item) => item.id === id).map((item) => item)[0];
+  const [isPopupOpen, setIsPopupOpen] = React.useState(false);
+  const [selectedImg, setSelectedImg] = React.useState(null);
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const path = useLocation().pathname.replace(/[^\/]+$/, ''); // обрезать последнюю часть url
+  const selectedItem = faq?.filter((i) => i.id === id).map((i) => i)[0];
 
-    function closePopup() {
-        setIsPopupOpen(false)
-    }
+  function closePopup() {
+    setIsPopupOpen(false);
+  }
 
-    function onClickImg(e) {
-        setIsPopupOpen(true)
-        setSelectedImg(e.target.src)
-    }
-    return (
-        <>
-            <Helmet>
-                <meta name="description" content={selectedItem?.title} />
-            </Helmet>
-        
-                {faq?.filter((item) => item.id === id).map((item, index) => (
+  function onClickImg(e) {
+    setIsPopupOpen(true);
+    setSelectedImg(e.target.src);
+  }
+  return (
+    <>
+      <Helmet>
+        <meta name="description" content={selectedItem?.title} />
+      </Helmet>
 
-                    <div className="faq" key = {index}>
-                        <div className="faq__block" key={item.id} onClick={() => navigate(`${path}`)}>
-                            <div className="faq__icon faq__icon_minus" > </div>
-                            <h4 className="faq__subtitle">{item.title}</h4>
-                        </div>
-                        <ul className="faq__list" >
-                            {item?.list?.map((i, index) => (
-                                <li key={index} className="faq__list-item">
-                                    <p className="faq__text">{i.text}</p>
-                                    <div className="faq__img-container">
-                                    {i.link ? <img className="faq__img" src={i.link} alt="скриншот" onClick={onClickImg}></img> : null}
-                                    </div>
-                                </li>
-                            ))}
-                            {item?.text}
-                            <div className="faq__support">
-                                {item.support && <a className="section__icon section__icon_tg" href="https://t.me/+79958454368" target="_blank" rel="noreferrer"></a>}
-                                {item.support_wa && <a className="section__icon section__icon_wa" href="https://wa.me/79958454368?text=" target="_blank" rel="noreferrer"></a>}
-                            </div>
-                        </ul>
-                    </div>
-                ))}
-                <ImgPopup selectedImg={selectedImg} onclose={closePopup} isPopupOpen={isPopupOpen} />
-         
-        </>
-    )
-};
+      {faq
+        ?.filter((i) => i.id === id)
+        .map((i, index) => (
+          <div className="faq" key={index}>
+            <div className="faq__block" key={item.id} onClick={() => navigate(`${path}`)}>
+              <div className="faq__icon faq__icon_minus"> </div>
+              <h4 className="faq__subtitle">{item.title}</h4>
+            </div>
+            <ul className="faq__list">
+              {item?.list?.map((i, index) => (
+                <li key={index} className="faq__list-item">
+                  <p className="faq__text">{i.text}</p>
+                  <div className="faq__img-container">{i.link ? <img className="faq__img" src={i.link} alt="скриншот" onClick={onClickImg}></img> : null}</div>
+                </li>
+              ))}
+              {item?.text}
+              <div className="faq__support">
+                {item.support && <a className="section__icon section__icon_tg" href="https://t.me/+79958454368" target="_blank" rel="noreferrer"></a>}
+                {item.support_wa && <a className="section__icon section__icon_wa" href="https://wa.me/79958454368?text=" target="_blank" rel="noreferrer"></a>}
+              </div>
+            </ul>
+          </div>
+        ))}
+      <ImgPopup selectedImg={selectedImg} onclose={closePopup} isPopupOpen={isPopupOpen} />
+    </>
+  );
+}
 
 export default FaqItem;

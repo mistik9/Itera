@@ -1,8 +1,7 @@
-import React from "react";
-import "./ImgPopup.css";
+import React from 'react';
+import './ImgPopup.css';
 
 function ImgPopup({ selectedImg, onclose, isPopupOpen }) {
-
   return (
     <section className={`popup ${isPopupOpen ? 'popup_opened' : ''}`} >
       <div className="popup__container popup__container_image">
@@ -11,7 +10,7 @@ function ImgPopup({ selectedImg, onclose, isPopupOpen }) {
         <p className="popup__disc"></p>
       </div>
     </section>
-  )
+  );
 }
 
 export default ImgPopup;

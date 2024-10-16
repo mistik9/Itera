@@ -1,10 +1,8 @@
-import React, {forwardRef} from "react";
-import {motion} from "framer-motion";
+import React, { forwardRef } from 'react';
+import { motion } from 'framer-motion';
 
-
-export const Circle = forwardRef(({},ref) =>{
-
-    return (
+// eslint-disable-next-line no-empty-pattern
+export const Circle = forwardRef(({}, ref) => (
         <div ref={ref} className="d11" >
             <div className="d21">
                 <div className="d31">
@@ -17,7 +15,6 @@ export const Circle = forwardRef(({},ref) =>{
             </div>
         </div>
 
-    )
-})
+));
 
 export const MCircle = motion(Circle);

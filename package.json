@@ -36,6 +36,8 @@
   },
   "dependencies": {
     "core-js": "^3.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
     "framer-motion": "^11.0.21",
     "livereload": "^0.9.3",
     "lodash": "^4.17.21",
