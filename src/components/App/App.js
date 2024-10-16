@@ -19,7 +19,7 @@ import './App.css';
 import Faq from '../Faq/Faq';
 import FaqItem from '../Faq/FaqItem';
 import {
-  faq_autoload, faq_avito, faq_drom, faq_avitojob,
+  faqAutoload, faqAvito, faqDrom, faqAvitojob,
 } from '../../utils/const';
 
 function App() {
@@ -38,25 +38,25 @@ function App() {
 
         <Route path="/avito-app" element={<AvitoLayout />}>
           <Route index element={<AvitoApp />} />
-          <Route path="faq" element={<Faq faq={faq_avito} />} />
-          <Route path="faq/:id" element={<FaqItem faq={faq_avito} />} />
+          <Route path="faq" element={<Faq faq={faqAvito} />} />
+          <Route path="faq/:id" element={<FaqItem faq={faqAvito} />} />
         </Route>
 
         <Route path="drom-app" element={<DromLayout />}>
           <Route index element={<DromApp />} />
-          <Route path="faq" element={<Faq faq={faq_drom} />} />
-          <Route path="faq/:id" element={<FaqItem faq={faq_drom} />} />
+          <Route path="faq" element={<Faq faq={faqDrom} />} />
+          <Route path="faq/:id" element={<FaqItem faq={faqDrom} />} />
         </Route>
 
         <Route path="autoload" element={<AutoloadLayout />} >
           <Route index element={<Autoload />} />
-          <Route path="faq" element={<Faq faq={faq_autoload} />} />
-          <Route path="faq/:id" element={<FaqItem faq={faq_autoload} />} />
+          <Route path="faq" element={<Faq faq={faqAutoload} />} />
+          <Route path="faq/:id" element={<FaqItem faq={faqAutoload} />} />
         </Route>
         <Route path="avitojob" element={<AvitoJobLayout />} >
           <Route index element={<AvitoJob />} />
-          <Route path="faq" element={<Faq faq={faq_avitojob} />} />
-          <Route path="faq/:id" element={<FaqItem faq={faq_avitojob} />} />
+          <Route path="faq" element={<Faq faq={faqAvitojob} />} />
+          <Route path="faq/:id" element={<FaqItem faq={faqAvitojob} />} />
         </Route>
         <Route path="/news" element={<News />} />
         <Route path="*" element={<PageNotFound />} />

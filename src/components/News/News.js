@@ -1,16 +1,18 @@
-/* eslint-disable camelcase */
+/* eslint-disable no-return-assign */
+/* eslint-disable no-param-reassign */
+
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './News.css';
 import {
-  updates_autoload, updates_avito, updates_drom, updates_avitojob,
+  updatesAutoload, updatesAvito, updatesDrom, updatesAvitojob,
 } from '../../utils/const';
 
 function News() {
-  const autoload = updates_autoload.map((i) => ({ title: (i.title = 'Avito: автозагрузка'), period: i.list_name, list: i.list }));
-  const avito = updates_avito.map((i) => ({ title: (i.title = 'Avito: чаты и товары'), period: i.list_name, list: i.list }));
-  const drom = updates_drom.map((i) => ({ title: (i.title = 'ДРОМ: чаты, сделки, товары'), period: i.list_name, list: i.list }));
-  const avitojob = updates_avitojob.map((i) => ({ title: (i.title = 'Avito: отклики и вакансии'), period: i.list_name, list: i.list }));
+  const autoload = updatesAutoload.map((i) => ({ title: (i.title = 'Avito: автозагрузка'), period: i.list_name, list: i.list }));
+  const avito = updatesAvito.map((i) => ({ title: (i.title = 'Avito: чаты и товары'), period: i.list_name, list: i.list }));
+  const drom = updatesDrom.map((i) => ({ title: (i.title = 'ДРОМ: чаты, сделки, товары'), period: i.list_name, list: i.list }));
+  const avitojob = updatesAvitojob.map((i) => ({ title: (i.title = 'Avito: отклики и вакансии'), period: i.list_name, list: i.list }));
   const resArr = avito.concat(autoload, drom, avitojob);
 
   const resArrConverted = resArr.sort((a, b) => {
@@ -23,7 +25,7 @@ function News() {
   const newsCheck = (title) => {
     if (title === '') return setNews(resArrConverted);
     const newItems = resArrConverted.filter((item) => item.title === title);
-    setNews(newItems);
+    return setNews(newItems);
   };
 
   return (

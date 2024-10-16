@@ -1,3 +1,6 @@
+/* eslint-disable prefer-template */
+/* eslint-disable no-useless-concat */
+/* eslint-disable space-infix-ops */
 import React from 'react';
 import './Feedback.css';
 import bx from '../../image/bitrix24_partner.png';
@@ -5,7 +8,7 @@ import bx from '../../image/bitrix24_partner.png';
 function Feedback() {
   React.useEffect(() => {
     const script = document.createElement('script');
-    script.src = `'https://cdn-ru.bitrix24.ru/b27494460/crm/form/loader_6.js'  ?${Date.now() / 180000 || 0}`;
+    script.src = 'https://cdn-ru.bitrix24.ru/b27494460/crm/form/loader_6.js' + '?'+(Date.now() / 180000 || 0);
     script.async = true;
     script.setAttribute('data-b24-form', 'inline/6/0ggjxc');
     script.setAttribute('data-skip-moving', 'true');
