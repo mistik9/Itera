@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable no-return-assign */
 /* eslint-disable no-param-reassign */
 
@@ -51,7 +52,7 @@ function News() {
       </div>
       <ul className="news__list">
         {news.map((i) => (
-          <li className="news__list-item" key={i.period}>
+          <li className="news__list-item" key={i.period + i.title}>
             <p className="news__list-period">{i.period}</p>
             {i.title === 'Avito: автозагрузка' ? (
               <NavLink to="/autoload" className="news__list-title">

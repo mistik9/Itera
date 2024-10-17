@@ -27,7 +27,7 @@ function FaqItem({ faq, item }) {
 
       {faq
         ?.filter((i) => i.id === id)
-        .map((i, index) => (
+        .map((item, index) => (
           <div className="faq" key={index}>
             <div className="faq__block" key={item.id} onClick={() => navigate(`${path}`)}>
               <div className="faq__icon faq__icon_minus"> </div>

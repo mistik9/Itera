@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    main: './src/index.js'
+    main: './src/index.js',
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -16,7 +16,7 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
-    allowedHosts: "all",
+    allowedHosts: 'all',
     open: true,
     compress: true,
     port: 3001,
@@ -24,34 +24,34 @@ module.exports = {
   },
   module: {
     rules: [{
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: '/node_modules/'
+      test: /\.js$/,
+      use: 'babel-loader',
+      exclude: '/node_modules/',
+    },
+    {
+      test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
+      type: 'asset/resource',
+    },
+    {
+      test: /\.css$/,
+      use: [MiniCssExtractPlugin.loader, {
+        loader: 'css-loader',
+        options: {
+          importLoaders: 1,
+        },
       },
-      {
-        test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            }
-          },
-          'postcss-loader'
-        ]
-      },
-    ]
+      'postcss-loader',
+      ],
+    },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      favicon: './src/favicon.ico'
+      favicon: './src/favicon.ico',
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
 
-  ]
-}
+  ],
+};

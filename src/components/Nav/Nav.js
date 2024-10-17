@@ -33,11 +33,17 @@ function Nav({ isNavOpen, openMenu, setIsNavOpen }) {
         </motion.p>
         <motion.p variants={textAnimation} custom={3} onClick={() => setIsNavOpen(false)}>
           {' '}
+          <Link className="nav__link" to="/bitrix">
+            Битрикс24
+          </Link>
+        </motion.p>
+        <motion.p variants={textAnimation} custom={4} onClick={() => setIsNavOpen(false)}>
+          {' '}
           <Link className="nav__link" to="/news">
             Новости
           </Link>
         </motion.p>
-        <motion.p variants={textAnimation} custom={4} onClick={() => setIsNavOpen(false)}>
+        <motion.p variants={textAnimation} custom={5} onClick={() => setIsNavOpen(false)}>
           {' '}
           <Link className="nav__link" to="/#feedback">
             Контакты
