@@ -1,9 +1,12 @@
+/* eslint-disable no-useless-escape */
+/* eslint-disable no-shadow */
+
 import React from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import ImgPopup from '../ImgPopup/ImgPopup';
 
-function FaqItem({ faq, item }) {
+function FaqItem({ faq }) {
   const [isPopupOpen, setIsPopupOpen] = React.useState(false);
   const [selectedImg, setSelectedImg] = React.useState(null);
   const { id } = useParams();
@@ -19,31 +22,31 @@ function FaqItem({ faq, item }) {
     setIsPopupOpen(true);
     setSelectedImg(e.target.src);
   }
+
   return (
     <>
       <Helmet>
         <meta name="description" content={selectedItem?.title} />
       </Helmet>
-
       {faq
         ?.filter((i) => i.id === id)
-        .map((item, index) => (
+        .map((i, index) => (
           <div className="faq" key={index}>
-            <div className="faq__block" key={item.id} onClick={() => navigate(`${path}`)}>
+            <div className="faq__block" key={i.id} onClick={() => navigate(`${path}`)}>
               <div className="faq__icon faq__icon_minus"> </div>
-              <h4 className="faq__subtitle">{item.title}</h4>
+              <h4 className="faq__subtitle">{i.title}</h4>
             </div>
             <ul className="faq__list">
-              {item?.list?.map((i, index) => (
+              {i?.list?.map((i, index) => (
                 <li key={index} className="faq__list-item">
                   <p className="faq__text">{i.text}</p>
                   <div className="faq__img-container">{i.link ? <img className="faq__img" src={i.link} alt="скриншот" onClick={onClickImg}></img> : null}</div>
                 </li>
               ))}
-              {item?.text}
+              {i?.text}
               <div className="faq__support">
-                {item.support && <a className="section__icon section__icon_tg" href="https://t.me/+79958454368" target="_blank" rel="noreferrer"></a>}
-                {item.support_wa && <a className="section__icon section__icon_wa" href="https://wa.me/79958454368?text=" target="_blank" rel="noreferrer"></a>}
+                {i.support && <a className="section__icon section__icon_tg" href="https://t.me/+79958454368" target="_blank" rel="noreferrer" ></a>}
+                {i.support_wa && <a className="section__icon section__icon_wa" href="https://wa.me/79958454368?text=" target="_blank" rel="noreferrer"></a>}
               </div>
             </ul>
           </div>
