@@ -7,6 +7,8 @@ function DromApp() {
     <div className="my-app">
       <p className="my-app__text">Данное приложение подойдёт продавцам запчастей и продавцам автомобилей.</p>
       <p className="my-app__text">Интеграция диалогов, сделок, объявлений о продаже запчастей и автомобилей.</p>
+      <p className="my-app__text">Подключение любого количества аккаунтов.</p>
+
       <ul className="my-app__list">
         <li className="my-app__list-item">
           <span className="my-app__text-span">Диалоги</span>
